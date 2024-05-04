@@ -28,21 +28,21 @@
 
 1. Открываем сайт https://eth-sepolia.blockscout.com/contract-verification
 
-    1. Вписываем адрес смарт контракта
+    * Вписываем адрес смарт контракта
 
-    2. Лицензия MIT
+    * Лицензия MIT
 
-    3. Метод верификации: Solidity(Flattened source code)
+    * Метод верификации: Solidity(Flattened source code)
 
-    4. Версия компилятора: 0.8.25
+    * Версия компилятора: 0.8.25
 
-    5. Версия EVM: default
+    * Версия EVM: default
 
-    6. Убираем галочку с оптимизации
+    * Убираем галочку с оптимизации
 
-    7. Вставляем тот же самый код из файла Counter.sol
+    * Вставляем тот же самый код из файла Counter.sol
 
-    8. Ждем Verify
+    * Ждем Verify
 
 ![plot](./img/blockscout.png)
 
