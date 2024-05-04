@@ -10,17 +10,17 @@
 
 3. Переходим во вкладку "Solidity compiler"
 
-    1. Жмем **"Compile Counter.sol"**, использую версию компилятора 0.8.25
+    * Жмем **"Compile Counter.sol"**, использую версию компилятора 0.8.25
 
     ![plot](img/remixCreate.png)
 
 4. Переходим в вкладку **"Deploy"**
 
-    1. В поле Environment выбираем Metamask. (!) Обязательно проверьте, что в Metamask выбрана сеть Sepolia
+    * В поле Environment выбираем Metamask. (!) Обязательно проверьте, что в Metamask выбрана сеть Sepolia
 
-    2. В поле **"adress gateway"** указываем **0x7702eD777B5d6259483baAD0FE8b9083eF937E2A** 
+    * В поле **"adress gateway"** указываем **0x7702eD777B5d6259483baAD0FE8b9083eF937E2A** 
 
-    3. Жмем **"Deploy"**, подтвержаем транзакцию. После копируем адрес контракта в **"Deployed/Unpinned Contracts"** внизу слева
+    * Жмем **"Deploy"**, подтвержаем транзакцию. После копируем адрес контракта в **"Deployed/Unpinned Contracts"** внизу слева
 
     ![plot](img/remixDeploy.png)
 
@@ -44,7 +44,7 @@
 
     * Ждем Verify
 
-![plot](./img/blockscout.png)
+    ![plot](./img/blockscout.png)
 
 ## Send a message using a GMP gateway contract
 
