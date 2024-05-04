@@ -6,7 +6,7 @@
 
 1. Открываем сайт https://remix.ethereum.org
 
-2. Создаем новый файл Counter.sol
+2. Создаем новый файл [Counter.sol](https://github.com/madest92/analog-testnet/blob/main/gmp/Counter.sol)
 
 3. Переходим во вкладку "Solidity compiler"
 
@@ -28,21 +28,21 @@
 
 1. Открываем сайт https://eth-sepolia.blockscout.com/contract-verification
 
-2. Вписываем адрес смарт контракта
+    1. Вписываем адрес смарт контракта
 
-3. Лицензия MIT
+    2. Лицензия MIT
 
-4. Метод верификации: Solidity(Flattened source code)
+    3. Метод верификации: Solidity(Flattened source code)
 
-5. Версия компилятора: 0.8.25
+    4. Версия компилятора: 0.8.25
 
-6. Версия EVM: default
+    5. Версия EVM: default
 
-7. Убираем галочку с оптимизации
+    6. Убираем галочку с оптимизации
 
-8. Вставляем тот же самый код из файла Counter.sol
+    7. Вставляем тот же самый код из файла Counter.sol
 
-9. Ждем Verify
+    8. Ждем Verify
 
 ![plot](./img/blockscout.png)
 
