@@ -1,50 +1,58 @@
 # View gets queried by SDK
 
-1. Копируем env файл
+## Зависимости
+
+Для работы потребуется установить [Docker](https://docs.docker.com/engine/install/)
+
+## Подготовка окружения
+
+Копируем env файл и настраиваем окружение
 
 ```
 cp .env-example .env
 ```
 
-2. Добавляем переменные:
-  - **WALLET_SUBSTRATE_ADDRESS** адрес Substrate кошелька
+- **WALLET_SUBSTRATE_ADDRESS** адрес Substrate кошелька
 
-  - **WALLET_SEED** seed фраза данного кошелька
+- **WALLET_SEED** seed фраза данного кошелька
 
-  - **QUERY_HASH_ID** хеш вашего профинансированного представления. Найти можно в [профиле](https://watch.testnet.analog.one/#/profile) во вкладке **Funded Views**
+- **QUERY_HASH_ID** хеш вашего профинансированного представления. Найти можно в [профиле](https://watch.testnet.analog.one/#/profile) во вкладке **Funded Views**
 
-  - **QUERY_HASH_FIELD** поле которые хотим вывести. Найти можно в **Definition** представления
+- **QUERY_HASH_FIELD** поле которые хотим вывести. Найти можно в **Definition** представления
 
-  ![plot](./img/view.png)
+![plot](./img/view.png)
 
-3. Устанавливаем зависимости
+## Запуск
 
-```
-npm i
-```
-
-4. Генерируем session key. (!) Требуется только 1 раз
+Запускаем всего один скрипт
 
 ```
-node ssk.mjs
-```
+✗ ./run.sh                           
+20-alpine: Pulling from library/node
+4abcf2066143: Pull complete 
+d1e2f2d8a178: Pull complete 
+3badf7a80ed4: Pull complete 
+a0bb3a80cd3b: Pull complete 
+Digest: sha256:fac6f741d51194c175c517f66bc3125588313327ad7e0ecd673e161e4fa807f3
+Status: Downloaded newer image for node:20-alpine
+docker.io/library/node:20-alpine
 
-5. Запускаем 5 раз скрипт для запроса вашего предствавления
-```
-node query.mjs
-```
+added 36 packages, and audited 37 packages in 4s
 
-PS. Пункты 3-5 можно запустить в докере
+4 packages are looking for funding
+  run `npm fund` for details
 
-```
-✗ docker run -it --rm -v $(pwd):/app -w /app node:20 bash
-root@d64c7c27bb81:/app# node ssk.mjs 
-The .apikeys file has been created successfully.
+found 0 vulnerabilities
+npm notice 
+npm notice New minor version of npm available! 10.5.2 -> 10.7.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.7.0
+npm notice Run npm install -g npm@10.7.0 to update!
+npm notice 
 The SESSION_KEY has been updated successfully.
-root@7576f174b83d:/app# for i in {1..5}; do node query.mjs; done                                                                                                                                                                              
-[]                                                                                                                                                                                                                                            
-[]                                                                                                                                                                                                                                            
-[]                                                                                                                                                                                                                                            
+The .apikeys file has been created successfully.
+[]
+[]
+[]
 []
 []
 ```

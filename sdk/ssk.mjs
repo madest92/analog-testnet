@@ -24,7 +24,7 @@ const pathEnv = path.join("./.env");
 
 if (fs.existsSync(pathKey)) {
   console.log("The .apikeys file already exists.");
-  process.exit(1);
+  process.exit(0);
 }
 
 const keyring = new Keyring({ type: "sr25519" });
