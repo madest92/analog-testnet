@@ -1,7 +1,5 @@
 # View gets queried by SDK
 
-## Подговка
-
 1. Копируем env файл
 
 ```
@@ -9,13 +7,13 @@ cp .env-example .env
 ```
 
 2. Добавляем переменные:
-  - WALLET_SUBSTRATE_ADDRESS адрес Substrate кошелька
+  - **WALLET_SUBSTRATE_ADDRESS** адрес Substrate кошелька
 
-  - WALLET_SEED seed фраза данного кошелька
+  - **WALLET_SEED** seed фраза данного кошелька
 
-  - QUERY_HASH_ID хеш вашего представления, которое вы профинсировали. Найти можно в [профиле](https://watch.testnet.analog.one/#/profile) во вкладке **Funded Views**
+  - **QUERY_HASH_ID** хеш вашего профинансированного представления. Найти можно в [профиле](https://watch.testnet.analog.one/#/profile) во вкладке **Funded Views**
 
-  - QUERY_HASH_FIELD поле которые хотим вывести. Найти можно в **Definition** представления
+  - **QUERY_HASH_FIELD** поле которые хотим вывести. Найти можно в **Definition** представления
 
   ![plot](./img/view.png)
 
