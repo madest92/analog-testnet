@@ -21,6 +21,7 @@ cp .env-example .env
 - **QUERY_HASH_FIELD** поле которые хотим вывести. Найти можно в **Definition** представления
 
 Пример для QUERY_HASH:
+
 QUERY_HASH_ID="QmfTT1Sdazc7MaMkqLrpX1rZEDumrioQkKH1J76WRzcqi6" и QUERY_HASH_FIELD="name"
 
 ![plot](./img/view.png)
