@@ -55,8 +55,4 @@ npm notice
 The SESSION_KEY has been updated successfully.
 The .apikeys file has been created successfully.
 []
-[]
-[]
-[]
-[]
 ```
