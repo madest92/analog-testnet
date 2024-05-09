@@ -19,8 +19,8 @@ async function main () {
   // Request to query the view..... 
   await timeGraphClient.view.data(
   { 
-    hashId: "QmWmQhD9qH5WZZepbZhSPu6Lev42eXEPxn6UUNUiDD7hbg",
-    fields: ["name"],
+    hashId: "Qmb1xggZdPLqtG99PhU7ggK5UQ7x3C84vQJZzmCauRbrdJ",
+    fields: ["totalsupply"],
     limit: "5"
   }); 
 
