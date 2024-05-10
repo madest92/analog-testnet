@@ -48,4 +48,22 @@
 
 ## Send a message using a GMP gateway contract
 
-Пока не знаю....
+1. Открываем страницу https://sepolia.etherscan.io/address/0xB5D83c2436Ad54046d57Cd48c00D619D702F3814#writeContract
+
+2. Подключаем метамаск(Connect to web3) и открываем submitMessage
+
+3. Вводим данные
+
+    * submitMessage - 0
+
+    * recipient (address) - your address
+
+    * network - 7
+
+    * gasLimit - 100000
+
+    * data - 0x001
+    
+    ![plot](./img/sendMessage.png)
+
+4. Жмем **Write** и затем **View your transaction**, чтобы получить id транзакции для подтверждения
