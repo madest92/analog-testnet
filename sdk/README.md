@@ -1,9 +1,5 @@
 # View gets queried by SDK
 
-## Зависимости
-
-Для работы потребуется установить [Docker](https://docs.docker.com/engine/install/)
-
 ## Подготовка окружения
 
 Копируем env файл и настраиваем окружение в файле
@@ -28,7 +24,28 @@ QUERY_HASH_ID="QmfTT1Sdazc7MaMkqLrpX1rZEDumrioQkKH1J76WRzcqi6" и QUERY_HASH_FIE
 
 ## Запуск
 
-Запускаем всего один скрипт
+Есть 2 варианта запуска, в докере и без
+
+### Без докера
+
+Устанавливаем [Node](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) если еще не установлен
+
+Затем создаем сессионный ключ.
+```
+npm i
+node ssk.mjs
+```
+
+И делаем запрос нашего представления
+```
+node query.mjs
+```
+
+### Использую докер
+
+Устанавливаем [Docker](https://docs.docker.com/engine/install/), если еще не установлен
+
+И запускаем скрипт run.sh в консоли
 
 ```
 ✗ ./run.sh                           
