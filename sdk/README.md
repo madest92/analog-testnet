@@ -45,7 +45,9 @@ node query.mjs
 
 Устанавливаем [Docker](https://docs.docker.com/engine/install/), если еще не установлен
 
-И запускаем скрипт run.sh в консоли
+#### Linux/Mac
+
+Запускаем скрипт run.sh в консоли
 
 ```
 ✗ ./run.sh                           
@@ -72,4 +74,23 @@ npm notice
 The SESSION_KEY has been updated successfully.
 The .apikeys file has been created successfully.
 []
+```
+
+#### Windows
+
+1. Открываем PowerShell/Command Prompt. Нажав Win+R, введя "cmd" и нажав Enter.
+
+2. Перейдите в каталог, в котором находится данный код
+
+Для этого можно использовать команду cd <путь_к_каталогу>. Например, если ваш проект находится в C:\Users\YourUser\Project, выполните команду: cd C:\Users\YourUser\Project.
+
+3. Создаем сессионный ключ
+```
+docker run -it --rm -v %cd%:/app -w /app node:20-alpine npm i
+docker run -it --rm -v %cd%:/app -w /app node:20-alpine node ssk.mjs
+```
+
+4. Делаем запрос нашего представления
+```
+docker run -it --rm -v %cd%:/app -w /app node:20-alpine node query.mjs
 ```
