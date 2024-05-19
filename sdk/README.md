@@ -22,7 +22,7 @@ QUERY_HASH_ID="QmfTT1Sdazc7MaMkqLrpX1rZEDumrioQkKH1J76WRzcqi6" и QUERY_HASH_FIE
 
 ![plot](./img/view.png)
 
-Должно получится что-то такое(адрес и сид фраза фейковая и исключительно для примера):
+В файле **.env** должно получится что-то такое(адрес и сид фраза фейковая и исключительно для примера):
 ```
 WALLET_SUBSTRATE_ADDRESS="5ECVVQFsdfgjs43EmAMFLBGascRA7zBMiVELSoWehusdgcf2qh"
 WALLET_SEED="date fun deputy change file figure humble month home envelope length house"
