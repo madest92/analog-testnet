@@ -2,13 +2,13 @@
 
 ## Подготовка окружения
 
-Скачиваем данный проект. Копируем env файл и настраиваем окружение в файле
+Скачиваем данный проект. Копируем .env-example файл  в .env и настраиваем окружение в файле
 
 ```
 cp .env-example .env
 ```
 
-- **WALLET_SUBSTRATE_ADDRESS** адрес Substrate кошелька
+- **WALLET_SUBSTRATE_ADDRESS** адрес Substrate кошелька (тот с которым подключались в Analog)
 
 - **WALLET_SEED** seed фраза данного кошелька
 
@@ -21,6 +21,15 @@ cp .env-example .env
 QUERY_HASH_ID="QmfTT1Sdazc7MaMkqLrpX1rZEDumrioQkKH1J76WRzcqi6" и QUERY_HASH_FIELD="name"
 
 ![plot](./img/view.png)
+
+Должно получится что-то такое(адрес и сид фраза фейковая и исключительно для примера):
+```
+WALLET_SUBSTRATE_ADDRESS="5ECVVQFsdfgjs43EmAMFLBGascRA7zBMiVELSoWehusdgcf2qh"
+WALLET_SEED="date fun deputy change file figure humble month home envelope length house"
+QUERY_HASH_ID="QmNUUXAsTX9agVUwt5rESsxE4KbUnUSmuAUGfL7mjz5UHY"
+QUERY_HASH_FIELD="name"
+SESSION_KEY=""
+```
 
 ## Запуск
 
