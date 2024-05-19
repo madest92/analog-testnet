@@ -26,7 +26,7 @@ QUERY_HASH_ID="QmfTT1Sdazc7MaMkqLrpX1rZEDumrioQkKH1J76WRzcqi6" и QUERY_HASH_FIE
 ```
 WALLET_SUBSTRATE_ADDRESS="5ECVVQFsdfgjs43EmAMFLBGascRA7zBMiVELSoWehusdgcf2qh"
 WALLET_SEED="date fun deputy change file figure humble month home envelope length house"
-QUERY_HASH_ID="QmNUUXAsTX9agVUwt5rESsxE4KbUnUSmuAUGfL7mjz5UHY"
+QUERY_HASH_ID="QmfTT1Sdazc7MaMkqLrpX1rZEDumrioQkKH1J76WRzcqi6"
 QUERY_HASH_FIELD="name"
 SESSION_KEY=""
 ```
