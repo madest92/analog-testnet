@@ -10,7 +10,7 @@
 
 3. Переходим во вкладку "Solidity compiler"
 
-    * Жмем **"Compile Counter.sol"**, использую версию компилятора 0.8.25
+    * Жмем **"Compile Counter.sol"**, использую версию компилятора 0.8.26
 
     ![plot](img/remixCreate.png)
 
@@ -18,7 +18,7 @@
 
     * В поле Environment выбираем Metamask. (!) Обязательно проверьте, что в Metamask выбрана сеть Sepolia
 
-    * В поле **"adress gateway"** указываем **0x7702eD777B5d6259483baAD0FE8b9083eF937E2A** 
+    * В поле **"adress gateway"** указываем **0x000000007f56768de3133034fa730a909003a165**
 
     * Жмем **"Deploy"**, подтвержаем транзакцию. После копируем адрес контракта в **"Deployed/Unpinned Contracts"** внизу слева
 
@@ -34,7 +34,7 @@
 
     * Метод верификации: Solidity(Flattened source code)
 
-    * Версия компилятора: 0.8.25
+    * Версия компилятора: 0.8.26
 
     * Версия EVM: default
 
@@ -45,6 +45,13 @@
     * Ждем Verify
 
     ![plot](./img/blockscout.png)
+
+## Build and deploy a smart contract using Analog GMP interfaces on Shibuya
+
+Все тоже самое как в Sepolia, только выбираем сеть **Shibuya** и ссылка верификации [эта](https://shibuya.blockscout.com/contract-verification)
+
+Если нет тестовых токенов, то их можно получить [тут](https://portal.astar.network/shibuya-testnet/assets)
+
 
 ## Send a message using a GMP gateway contract
 
