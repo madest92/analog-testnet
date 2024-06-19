@@ -12,7 +12,7 @@ contract Counter is IGmpReceiver {
     address private immutable _gateway;
     uint256 public number;
 
-    // example gw 0x7702eD777B5d6259483baAD0FE8b9083eF937E2A
+    // address 0x000000007f56768de3133034fa730a909003a165
     constructor(address gateway) {
         _gateway = gateway;
     }

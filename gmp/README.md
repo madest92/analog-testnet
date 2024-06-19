@@ -53,24 +53,51 @@
 Если нет тестовых токенов, то их можно получить [тут](https://portal.astar.network/shibuya-testnet/assets)
 
 
-## Send a message using a GMP gateway contract
+## Send a message using a GMP gateway contract on Sepolia
 
-1. Открываем страницу https://sepolia.etherscan.io/address/0xB5D83c2436Ad54046d57Cd48c00D619D702F3814#writeContract
+1. Открываем сайт https://remix.ethereum.org
 
-2. Подключаем метамаск(Connect to web3) и открываем submitMessage
+2. Загружаем 3 файла [IGateway.sol](https://github.com/madest92/analog-testnet/blob/main/gmp/IGateway.sol) [Primitives.sol](https://github.com/madest92/analog-testnet/blob/main/gmp/Primitives.sol) [BranchlessMath.sol](https://github.com/madest92/analog-testnet/blob/main/gmp/BranchlessMath.sol)
 
-3. Вводим данные
+3. Переходим во вкладку "Solidity compiler"
 
-    * submitMessage - 0
+    * Жмем **"Compile IGateway.sol"**, использую версию компилятора 0.8.26
 
-    * recipient (address) - your address
+    ![plot](img/remixCreateGateway.png)
 
-    * network - 7
+4. Переходим в вкладку **"Deploy"**
 
-    * gasLimit - 100000
+    * В поле Environment выбираем Metamask. (!) Обязательно проверьте, что в Metamask выбрана сеть Sepolia
 
-    * data - 0x001
+    * В поле **"adress gateway"** указываем **0x000000007f56768de3133034fa730a909003a165**
+
+    * Жмем **"At Address"**
+
+4.1. Вводим данные для **submitMessage** внизу слева в **"Deployed/Unpinned Contracts"**
+
+    * destinationAddress - 0xF871c929bE8Cd8382148C69053cE5ED1a9593EA7
+
+    * destinationNetwork - 7
+
+    * executionGasLimit - 30000
+
+    * data - 0x01
     
-    ![plot](./img/sendMessage.png)
+    ![plot](img/remixAddress.png)
 
-4. Жмем **Write** и затем **View your transaction**, чтобы получить id транзакции для подтверждения
+4.2. Жмем **transact** и подтвержаем транзакцию в метамасте. После находим **transaction hash**
+
+    ![plot](img/remixTrasactHash.png)
+
+## Send a message using a GMP gateway contract on Shibuya
+
+Все тоже самое как в Sepolia, только выбираем сеть **Shibuya** в метамаске и используем следующие данные:
+
+    * destinationAddress - 0xB5D83c2436Ad54046d57Cd48c00D619D702F3814
+
+    * destinationNetwork - 5
+
+    * executionGasLimit - 30000
+
+    * data - 0x01
+ 
