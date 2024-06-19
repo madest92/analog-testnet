@@ -69,9 +69,7 @@
 
     * В поле Environment выбираем Metamask. (!) Обязательно проверьте, что в Metamask выбрана сеть Sepolia
 
-    * В поле **"adress gateway"** указываем **0x000000007f56768de3133034fa730a909003a165**
-
-    * Жмем **"At Address"**
+    * В поле **"At Address"** указываем **0x000000007f56768de3133034fa730a909003a165** и нажимаем на нее
 
 4.1. Вводим данные для **submitMessage** внизу слева в **"Deployed/Unpinned Contracts"**
 
@@ -85,9 +83,9 @@
     
     ![plot](img/remixAddress.png)
 
-4.2. Жмем **transact** и подтвержаем транзакцию в метамасте. После находим **transaction hash**
+4.2. Жмем **transact** и подтверждаем транзакцию в метамасте. После находим **transaction hash** в консоли remix
 
-    ![plot](img/remixTrasactHash.png)
+![plot](img/remixTrasactHash.png)
 
 ## Send a message using a GMP gateway contract on Shibuya
 
