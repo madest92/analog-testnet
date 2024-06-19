@@ -71,7 +71,7 @@
 
     * В поле **"At Address"** указываем **0x000000007f56768de3133034fa730a909003a165** и нажимаем на нее
 
-4.1. Вводим данные для **submitMessage** внизу слева в **"Deployed/Unpinned Contracts"**
+5. Вводим данные для **submitMessage** внизу слева в **"Deployed/Unpinned Contracts"**
 
     * destinationAddress - 0xF871c929bE8Cd8382148C69053cE5ED1a9593EA7
 
@@ -80,10 +80,10 @@
     * executionGasLimit - 30000
 
     * data - 0x01
-    
+ 
     ![plot](img/remixAddress.png)
 
-4.2. Жмем **transact** и подтверждаем транзакцию в метамасте. После находим **transaction hash** в консоли remix
+6. Жмем **transact** и подтверждаем транзакцию в метамасте. После находим **transaction hash** в консоли remix
 
 ![plot](img/remixTrasactHash.png)
 
@@ -91,11 +91,11 @@
 
 Все тоже самое как в Sepolia, только выбираем сеть **Shibuya** в метамаске и используем следующие данные:
 
-    * destinationAddress - 0xB5D83c2436Ad54046d57Cd48c00D619D702F3814
+* destinationAddress - 0xB5D83c2436Ad54046d57Cd48c00D619D702F3814
 
-    * destinationNetwork - 5
+* destinationNetwork - 5
 
-    * executionGasLimit - 30000
+* executionGasLimit - 30000
 
-    * data - 0x01
- 
+* data - 0x01
+
